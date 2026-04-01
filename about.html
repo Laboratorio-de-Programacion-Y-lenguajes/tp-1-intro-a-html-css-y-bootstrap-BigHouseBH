@@ -4,45 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de mí - Mi Blog</title>
+    
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles.css">
+    
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navbar (copiar de index.html) -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    
+        <!-- Caja contenedora -->
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
+                
+            <!--link al blog -->
+            <a class="navbar-brand" href="index.html">Mi Blog</a>
+
+                <!--<ul> = Unordered List = lista desordenada-->
+
+                <!--Lista de links-->
+                <ul class="navbar-nav">
+
+                    <!--LI: List Item-->
+
+                    <!--LI acerca de mi-->
+                    <li class="nav-item">
+    
+                        <a class="nav-link" href="about.html">Acerca de mí</a>
+                    </li>
+
+                    <!--LI contacto-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+
+                </ul>
+
+
+            </div>
         </div>
     </nav>
 
-    <!-- Contenido -->
-    <main class="py-5">
-        <div class="container">
-            <div class="row">
-                <!-- Sidebar: Avatar (COMPLETAR) -->
-                <aside class="col-md-3 mb-4">
-                    <img src="assets/images/avatar.jpg" class="img-fluid rounded-circle mb-3" alt="Avatar" style="max-width: 200px;">
-                    <h3>Tu Nombre</h3>
-                    <p class="text-muted">Desarrollador web &amp; escritor</p>
-                </aside>
+    <!-- Contenido Acerca de mí -->
+    <main class="container my-4">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">Acerca de mi</h2>
+                        
+                        <!-- Foto -->
+                        <div class="text-center mb-4">
+                            <img src="assets/images/imagen.jpeg" class="rounded-circle" width="200" height="200">
+                        </div>
+                        
+                        <!-- Información personal -->
+                        <h4 class="text-center">Hola, soy Misael Casagrande</h4>
+                        <p class="text-center text-muted mb-4">Estudiante de analista en sistemas</p>
+                        
+                        <p>Soy Misael Casagrande, tengo 19 años, y soy un estudiante de Analista en Sistemas, desde muy chico me interesa el area de la tecnologia y la inovacion .</p>
+                        <p>Este es un perfil fue realizado para un trabajo practico de Laboratorio de Programacion Y lenguajes</p>
+                        
+                        <hr><!-- Es una linea que funciona de espacio-->
 
-                <!-- Contenido principal (COMPLETAR) -->
-                <article class="col-md-9">
-                    <h1>Acerca de mí</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <!-- TODO: agregar más párrafos, habilidades, etc. -->
-                </article>
+                        
+                        <h5>Ubicación</h5>
+                        <p>Argentina, Ushuaia, Tierra del Fuego</p>
+                        
+                        <h5>Ocupación</h5>
+                        <p>Estudiante de Analista en Sistemas</p>
+                        
+                        <h5>Intereses</h5>
+                        <ul>
+                            <li>Backend</li>
+                            <li>Mecatronica</li>
+                            <li>Robotica</li>
+                            <li>Inteligencia artificial</li>
+                        </ul>
+                        
+                        <h5> Habilidades</h5>
+                        <ul>
+                            <li>Java</li>
+                            <li>Python (basico)</li>
+                            <li>C++ (basico)</li>
+                        </ul>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
+    
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <p>&copy; 2026 Mi Blog.</p>
+    <footer class="bg-body-tertiary text-center py-3 mt-4">
+        <div class="container">
+            <p class="mb-2">Puedes encontrarme en</p>
+            <a href="mailto:misaelgabrielcasagrande@gmail.com" type="email" class="text-decoration-none me-2">correo</a>
+            <a href="tel:+5492901584401" class="text-decoration-none me-2">Telefono</a>
+            <a href="https://www.instagram.com/misa_casagrande" class="text-decoration-none me-2">Instagram</a>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
